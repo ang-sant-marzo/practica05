@@ -1,0 +1,7 @@
+<div class="card l">
+    <h1>Ejemplo acceso al DOM</h1>
+    <hr>
+    <ul #lista>
+        <li #item *ngFor="let nombre of nombres; let i = index" (click)="setDone(i)" >{{nombre}}</li>
+    </ul>
+</div>
